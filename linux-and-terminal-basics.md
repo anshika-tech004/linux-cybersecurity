@@ -49,6 +49,8 @@
  |clear | clears the terminal screen|
  |whoami | shows username of currently logged-in user|
 
+ ## Commands practiced evidence
+
  ![Basic Terminal commands](basic-terminal-commands.png)
 
  # shell
@@ -60,6 +62,8 @@
      - Fish
 
 During my Linux practice, I am mainly working with Bash commands.
+
+## Shell practiced evidence
 
 ![Shell practice](shell-practice.png)
 
