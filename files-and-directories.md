@@ -53,9 +53,10 @@ The "ls" command displayed "notes" and "projects", confirming that the directori
 
 
  - Used the command "rmdir" and "rm -r"
+ - I created a new directory and deleted the directories that were present in the previous directory along with the files if any existed
+ - I also deleted the new emptycreated directory
 
-![delete directory](delete-directory.png)
-
+![created new directory and files in it and then deleted them](delete-directory-and-file.png)
 
 
 # What I Learned
