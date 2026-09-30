@@ -7,7 +7,7 @@ I learned about two main types of paths:
      -  starts from the root directory "/".
      -  It gives complete location of the file or directory.
    ### Syntax
-         - /parent_directroy/subdirectory/file_or_directory
+         - /parent_directory/subdirectory/file_or_directory
 2. Relative Path
      - A relative path describes a location from the current directory.
      - It does not start with / rather depends on your current location pwd)
@@ -23,9 +23,17 @@ I learned about two main types of paths:
 |".."| Parent directory| cd .. |
 |"~"| User's home directory i.e personal directory assigned to linux user| cd ~ |
 
-## Practical
+## Commands Practiced
 I practiced the above mentioned commands in Ubuntu for which I have attached the screenshot
-![commands](linux-commands-practical-ss3.png)
+
+![path-commands](absolute-path.png)
+
+![path-commands2](relative-path.png)
+
+ # What I learned
+    - I used "pwd" to check my current location and practiced moving between directories using relative paths.
+    - The practical helped me understand how paths are used for navigation and working with files and directories in Linux.
+
 
 
 
