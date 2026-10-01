@@ -18,10 +18,20 @@ The objective of this month is to develop practical Linux skills and build a str
 
 ### Month 2: Weekly Progress
 
-WEEK 1: Linux Fundamentals
+WEEK 1: Linux Fundamentals ✅
   - Linux & Terminal
   - Linux file system
   - Files and Directories
   - Paths
   - Reading and searching files
   - command help
+  - Practical evidence
+
+WEEK 2: Processes, Services and System Administration ⌛
+  - Processes
+  - Process monitoring and management
+  - Services
+  - Package management
+  - System monitoring
+  - Linux logs
+
