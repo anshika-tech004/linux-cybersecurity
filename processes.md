@@ -30,24 +30,25 @@
 
 ## Foreground vs Background
 - In Linux, processes can run either in the foreground or background.
-| Feature      | Foreground Process                                     | Background Process                             |
+
+| Features| Foreground Process| Background Process|
 |----|----|----|
-| Control      | Controlled directly by the terminal                    | Runs independently while terminal is available |
-| Terminal     | Occupies the terminal                                  | Does not occupy the terminal                   |
-| User input   | Can receive input from terminal                        | Normally cannot receive terminal input         |
-| Next command | Usually cannot enter another command until it finishes | You can continue using the terminal            |
-| Example      | `nano file.txt`                                        | `nano file.txt &`                              |
-| Symbol       | —                                                      | `&` is commonly used to start one              |
+| Control| Controlled directly by the terminal| Runs independently while terminal is available|
+| Terminal| Occupies the terminal| Does not occupy the terminal|
+| User input| Can receive input from terminal| Normally cannot receive terminal input|
+| Next command| Usually cannot enter another command until it finishes| You can continue using the terminal|
+| Example| `nano file.txt`| `nano file.txt &'|
+
 
 ## Process State
 - A process state tells us what a process is currently doing in the Linux operating system.
    # Main Linux process states
-    | State     |Symbol | Meaning |                                                                   
+| State| Symbol| Meaning|                                                                       
 |----|----|----|
-| **Running**  | `R`    | Process is currently executing or is ready to execute |
-| **Sleeping** | `S`    | Process is waiting for an event/resource |
-| **Stopped**  | `T`    | Process has been stopped, usually by a signal `Ctrl+Z` |
-| **Zombie**   | `Z`    | Process has finished, but its parent has not yet collected its exit status  |
+| **Running**  | `R` | Process is currently executing or is ready to execute|
+| **Sleeping** | `S` | Process is waiting for an event/resource|
+| **Stopped**  | `T` | Process has been stopped, usually by a signal `Ctrl+Z`|
+| **Zombie**   | `Z` | Process has finished, but its parent has not yet collected its exit status|
 
 ## Process Monitoring
 - Process monitoring means observing and managing the processes running in a Linux system.
