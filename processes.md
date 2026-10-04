@@ -31,7 +31,7 @@
 ## Foreground vs Background
 - In Linux, processes can run either in the foreground or background.
 | Feature      | Foreground Process                                     | Background Process                             |
-| ------------ | ------------------------------------------------------ | ---------------------------------------------- |
+|----|----|----|
 | Control      | Controlled directly by the terminal                    | Runs independently while terminal is available |
 | Terminal     | Occupies the terminal                                  | Does not occupy the terminal                   |
 | User input   | Can receive input from terminal                        | Normally cannot receive terminal input         |
@@ -42,12 +42,12 @@
 ## Process State
 - A process state tells us what a process is currently doing in the Linux operating system.
    # Main Linux process states
-    | State                     | Symbol | Meaning                                                                     |
-| ------------------------- | ------ | --------------------------------------------------------------------------- |
-| **Running**               | `R`    | Process is currently executing or is ready to execute                       |
-| **Sleeping**              | `S`    | Process is waiting for an event/resource       |
-| **Stopped**               | `T`    | Process has been stopped, usually by a signal `Ctrl+Z` |
-| **Zombie**                | `Z`    | Process has finished, but its parent has not yet collected its exit status  |
+    | State     |Symbol | Meaning |                                                                   
+|----|----|----|
+| **Running**  | `R`    | Process is currently executing or is ready to execute |
+| **Sleeping** | `S`    | Process is waiting for an event/resource |
+| **Stopped**  | `T`    | Process has been stopped, usually by a signal `Ctrl+Z` |
+| **Zombie**   | `Z`    | Process has finished, but its parent has not yet collected its exit status  |
 
 ## Process Monitoring
 - Process monitoring means observing and managing the processes running in a Linux system.
@@ -78,15 +78,20 @@
   - Syntax: kill PID
 
 ## Practicing Process Termination Safely
-- For practice, I can created my own process using the sleep command.
+- For practice, I created my own process using the sleep command.
 - I found its PID using:
 pgrep sleep
 - Then I terminated the process using:
 kill PID
-After terminating it, I verified whether it is still running:
+- After terminating it, I verified whether it is still running:
 pgrep sleep
+- I also practiced some of the above mentioned commands like jobs, ps, pstree.
 
 ![background-process-PID-termination](backgroundprocess-PID-termination.png)
+
+![practiced-commands](jobs-ps.png)
+![practiced-commands-2](pstree-kill.png)
+
 
 
   
