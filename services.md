@@ -30,7 +30,7 @@ A service can be started using:
 
 sudo systemctl start <service-name>
 
-![started-a-service](starting-service-ssh.png)
+![started-a-service](started-service-ssh.png)
 
 - I started the service ssh and checked whether it's active(running) or not.
 
@@ -45,7 +45,7 @@ systemctl status <service-name>
 
 - for the reference I have attached the screenshot of the service that I practiced
   
-![checked-ssh-service-status](ssh-service-status.png)
+![checked-ssh-service-status](checked-ssh-service-status.png)
 
 What I observed:
 I checked the current status of the SSH service and observed whether it was active/running.
@@ -57,7 +57,7 @@ To view currently active services:
 
 systemctl list-units --type=service --state=running
 
-- ![running-services](lisitng-running-services.png)
+- ![running-services](Running-Services.png)
 
 What I observed:
 I viewed the services currently running in the Linux system.
@@ -76,7 +76,7 @@ sudo systemctl stop ssh
 
 - This stops the service immediately. Also in the below screenshot I also practiced how to shut the socket too, which is basically a listener that activates the service when a connection arrives.
 - I also checked whether the ssh.socket is stopped or not
-   ![stopping-service](stopped-service.png)
+   ![stopping-service](stopping-service.png)
  ![ssh-socket-stopped-proof](status.png)
 ---
  # Restarting a Service
