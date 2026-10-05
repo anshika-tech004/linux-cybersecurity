@@ -3,11 +3,11 @@
 - Services can start automatically when the system boots and continue running in the background.
   
 - Examples of services include:
-- SSH service
-- Network services
-- Web servers
-- Cron services
-- System logging services
+    - SSH service
+    - Network services
+    - Web servers
+    - Cron services
+    - System logging services
 Linux uses systemd to manage services.
 
 ---
@@ -108,6 +108,14 @@ systemctl is-enabled <service-name>
 
 What I observed:
 I checked whether the SSH service was configured to start automatically during system boot.
+
+---
+
+ # Useful commands for basic service investigation include:
+
+systemctl list-units --type=service --state=running
+systemctl status <service-name>
+systemctl is-enabled <service-name>
 
 ---
 
