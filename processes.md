@@ -54,13 +54,18 @@
 - Process monitoring means observing and managing the processes running in a Linux system.
 - helps us check CPU usage, memory usage, process states, process IDs, and whether a process is consuming too many resources.
   # commands
-|Commands| Purpose|
-|----|----|
-| ps| displays currently running processes.|
-| ps aux| displays detailed information about running processes|
-| top| Real-time process monitoring|
-| pstree| displays processes in a tree structure |
-| pgrep| finds a process by name|
+|Commands| Purpose| Cybersecurity relevance|
+|----|----|----|
+| ps| displays currently running processes.| basic process investigation|
+| ps aux| displays detailed information about running processes| helps to identify suspicious process|
+| top| Real-time process monitoring| helps to detect CPU/RAM usage|
+| pstree| displays processes in a tree structure | helps us to understand how processes started|
+| pgrep <name>| finds a process by name| quickly locates a specific process|
+| fg| brings background jobs to foreground| shell/process management|
+| bg| runs a stopped job in background| shell/process management|
+| &| starts a command in background| helps to run processes without blocking terminal|
+| kill <PID>| terminates process| safely stops process|
+| Kill -9<PID>| forcefully terminates| useful when process refuses to terminate|
 
   # CPU/Memory Usage
   - Processes use system resources such as CPU and memory while they are running.
