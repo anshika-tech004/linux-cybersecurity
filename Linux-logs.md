@@ -167,7 +167,7 @@ Command| Purpose|
 |"info"| Informational message|
 |"debug"| Debugging information|
 
-# Practical
+
 
 
 
