@@ -53,33 +53,37 @@ Many traditional Linux log files are stored inside:
    - ls /var/log
 - For more detailed information:
 ls -lah /var/log
+
+![var-log-directory](var-log-directory.png)
+
+- ls- lists files and directories
+- -l- displays detailed information
+- -a- includes hidden files
+- -h- displays file sizes in a human-readable format
+- /var/log- linux directory containing system and application logs.
+
 - To identify the type of a log file:
-file /var/log/syslog
+    - file /var/log/syslog
+      
 
 ## Reading Logs
 - Linux provides several commands for reading text-based logs.
-   - "cat"
-   - Useful keys inside "less":
+   - "cat" (cat displays the contents of a file)
+   - cat /var/log/syslog
+   - Useful for small log files. Large files can flood the terminal.
 
-Space     → Next page
-b         → Previous page
-↑ / ↓     → Move up/down
-/keyword  → Search
-q         → Quit
 
-- Example:
-  - /error
-
-This searches for the word "error"
  # Using "tail" to Read Recent Logs
   - "tail" displays the last lines of a file.
   - Example:
 tail /var/log/syslog
 - To display the last 20 lines: tail -n 20 /var/log/syslog
-
-- To continuously monitor new log entries: tail -f /var/log/syslog
-- The "-f" option means follow.
-It allows you to watch new entries as they are added to the file.
+  
+- To continuously monitor new log entries:
+    - tail -f /var/log/syslog
+    - The "-f" option means follow.
+    - It monitors the log live.
+- It allows you to watch new entries as they are added to the file.
 
  # Cybersecurity Relevance
 
@@ -92,14 +96,12 @@ It allows you to watch new entries as they are added to the file.
 - "grep" searches text for a particular pattern or keyword.
 
 - Example:
-
-grep "error" /var/log/syslog
-
-- This searches for lines containing:
-error
+   - grep "error" /var/log/syslog
+   - This searches for lines containing:
+       - error
 
 - Use "-i" for case-insensitive searching:
-grep -i "error" /var/log/syslog
+    - grep -i "error" /var/log/syslog
 
 ---
   # Searching for a Specific Service
@@ -123,7 +125,7 @@ This means:
 -This is useful when a log file is large and you only want to examine recent entries.
 
 ## "journalctl"
-- It displays log entries stored by the system journal.
+- It displays log entries stored by the system journal. 
 
  #  Basic "journalctl" Commands
 
@@ -132,16 +134,21 @@ This means:
 - Because the journal can contain a large amount of information, the output is usually displayed through a pager.
 # View Recent Journal Entries
    - journalctl -n
+   - ![journalctl](journalctl.png)
+
 # View Logs from the Current Boot
   - journalctl -b
 - This shows journal entries from the current system boot.
 # View Logs from the Previous Boot
   - journalctl -b -1
+# Follow Journal Logs
+  - journalctl -f
 # Searching the Journal
    - "journalctl" can also be combined with "grep".
 - Example:
 - journalctl | grep -i "error"
 - This searches journal output for entries containing "error".
+
 
 # Useful "journalctl" Options
 
@@ -166,6 +173,23 @@ Command| Purpose|
 |"notice"| Normal but significant event|
 |"info"| Informational message|
 |"debug"| Debugging information|
+
+## What I Learned
+
+- Linux systems maintain logs to record system and application events.
+- Many traditional Linux logs are stored under "/var/log".
+- "less" can be used to read large log files interactively.
+- "tail" is useful for viewing recent log entries.
+- "tail -f" can monitor new entries as they appear.
+- "grep" can search logs for specific keywords.
+- Pipes can combine commands such as "tail" and "grep".
+- "journalctl" is used to view logs collected by the systemd journal.
+- "journalctl -f" can monitor new journal entries.
+- "journalctl -u" can be used to view logs for a particular service.
+- Logs are important for both troubleshooting and cybersecurity monitoring.
+
+---
+
 
 
 
