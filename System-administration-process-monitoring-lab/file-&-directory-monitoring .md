@@ -3,9 +3,11 @@
 To practise inspecting files and directories in Linux, viewing file information, and understanding basic file metadata.
 
 # Commands Practised
-   1. pwd"- Displays the present working directory, showing the current location in the Linux filesystem.
-   2. ls -lh"- Lists files and directories in a human-readable long format, displaying details such as permissions, ownership, file size, and modification time.
-   3. stat README.md"- Displays detailed information about the specified file, including its size, permissions, ownership, and timestamps.
+   1. pwd- Displays the present working directory, showing the current location in the Linux filesystem.
+   2. ls -lh- Lists files and directories in a human-readable long format, displaying details such as permissions, ownership, file size, and modification time.
+   3. stat - Displays detailed information about the specified file, including its size, permissions, ownership, and timestamps.
+
+ ![file-directory-monitoring](file-directory-monitoring.png)
 
 # Observations
 
