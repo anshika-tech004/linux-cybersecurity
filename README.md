@@ -27,11 +27,19 @@ WEEK 1: Linux Fundamentals ✅
   - command help
   - Practical evidence
 
-WEEK 2: Processes, Services and System Administration ⌛
+WEEK 2: Processes, Services and System Administration ✅
   - Processes
   - Process monitoring and management
   - Services
   - Package management
   - System monitoring
   - Linux logs
+  - Linux System Administration & Process Monitoring lab folder
 
+WEEK 3: Users, Groups, Permissions & SSH
+  - Users & Groups
+  - File Permissions
+  - Ownership & sudo
+  - Permission troubleshooting
+  - SSH basics
+  - Security & access control
