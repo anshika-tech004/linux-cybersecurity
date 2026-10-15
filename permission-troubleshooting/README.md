@@ -12,53 +12,44 @@
 
 ## Practical Exercises
 Task 1: Inspect Existing File Permissions
-Objective: Identify the current permissions and ownership of a test file.
-Commands practiced:
+- Objective: Identify the current permissions and ownership of a test file.
+- Commands practiced:
   - ls -l
   - ls -l testfile.txt
-  - stat testfile.txt
-  - whoami
-  - id
+- Learning: 
+  - The "ls -l" command displays file permissions and ownership.
 
-Learning: 
-- The "ls -l" command displays file permissions and ownership.
-- The "stat" command provides detailed information about the file, while "whoami" and "id" help identify the current user and group memberships.
 
 Task 2: Troubleshoot a Read Permission Issue
-Objective: Understand what happens when a user does not have permission to read a file.
+- Objective: Understand what happens when a user does not have permission to read a file.
 - Command practiced:
   - cat testfile.txt
 - To correct the permission when appropriate:
    - chmod u+r testfile.txt
 
-Learning: 
-- The "r" permission allows a file to be read.
-- The command "chmod u+r" adds read permission for the file owner.
+- Learning: 
+   - The "r" permission allows a file to be read.
+   - The command "chmod u+r" adds read permission for the file owner.
   
 Task 3: Troubleshoot a Write Permission Issue
-Objective: Understand how write permissions affect file modification.
+- Objective: Understand how write permissions affect file modification.
 - Command practiced:
    - echo "Permission troubleshooting test" >> testfile.txt
    - If the current user does not have write permission, the command may fail with a "Permission denied" error.
 - To correct the permission when appropriate:
    - chmod u+w testfile.txt
+- I also practiced chmod u+r testfile.txt
 
-Learning: 
-- The "w" permission allows a user to modify a file. 
-
-Task 4: Understand and Correct Permission Settings
-Objective: Learn how to modify specific permissions without unnecessarily granting access to everyone.
-- Examples:
-   - chmod u+r testfile.txt
-   - chmod u+w testfile.txt
-Here:
-- "u" represents the file owner.
-- "r" represents read permission.
-- "w" represents write permission.
-- "+" adds the specified permission.
+- Learning: 
+    - The "w" permission allows a user to modify a file. 
+- Here:
+   - "u" represents the file owner.
+   - "r" represents read permission.
+   - "w" represents write permission.
+   - "+" adds the specified permission.
   
-Learning: 
-- Linux permissions should be corrected according to the actual access requirement rather than making every file accessible to everyone.
+- Learning: 
+    - Linux permissions should be corrected according to the actual access requirement rather than making every file accessible to everyone.
 
 ## Common Permission Troubleshooting Checklist
 When a "Permission denied" error occurs:
