@@ -43,7 +43,19 @@ It is commonly used by Linux administrators and cybersecurity professionals to:
             - Private key: Kept secret by the user.
             - Public key: Placed on the remote server, usually in the user's "~/.ssh/authorized_keys" file.
 
-  # Basic SSH Commands
+  # Basic SSH Commands (Practiced)
+  - Task1: Checked the SSH Client Version
+     - objective:- To verify that openSSH client is installed and check its version
+
+  ![ssh-client-version](ssh-client-version.png)
+   - Result- Helped me verify SSH client availability.
+
+  - Task2: 
+  
+  
+
+  
+  
   
 
 
