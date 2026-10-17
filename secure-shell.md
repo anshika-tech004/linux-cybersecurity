@@ -48,9 +48,41 @@ It is commonly used by Linux administrators and cybersecurity professionals to:
      - objective:- To verify that openSSH client is installed and check its version
 
   ![ssh-client-version](ssh-client-version.png)
-   - Result- Helped me verify SSH client availability.
+    - Result- Helped me verify SSH client availability.
 
-  - Task2: 
+  - Task2: Connecting to a remote server
+     - objective: To establish a secure connection to another computer or server using SSH
+     - Syntax: ssh username@server_ip
+     - ssh- Starts the SSH client
+     - username- account name on the remote server
+     - server_ip- IP address of remote server
+
+ ![ssh-remote-connection](ssh-remote-connection.png)
+
+ - Task3: Check SSH Server Service Status
+     - objective- Checks the status of the SSH server service, if installed.
+  
+![ssh-service-status](ssh-service-status.png)
+
+- Task4: Check Whether the SSH Server Is Listening
+     - objective: to check for listening socket TCP socket on port 22
+
+![ssh-server-listening](ssh-server-listening.png)
+    - Herein:
+        - LISTEN — the server is listening for incoming connections.
+        - :22 — SSH is listening on port 22.
+        - sshd — the SSH server process.
+        - 0.0.0.0:22 — listening on port 22 on all IPv4 interfaces.
+        - [::]:22 — listening on port 22 on all IPv6 interfaces.
+## What I learned 
+- An SSH client can be installed without an SSH server.
+- Learned the basics of remote login.
+- Understood  password and public-key authentication.
+- Learnt to check the service status.
+- A successful remote connection requires a reachable server, a listening SSH service, and valid authentication.
+- Do not attempt to connect to systems without authorization.
+
+ 
   
   
 
