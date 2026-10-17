@@ -42,6 +42,14 @@ It is commonly used by Linux administrators and cybersecurity professionals to:
       - B. Public-Key Authentication- Public-key authentication uses a cryptographic key pair:
             - Private key: Kept secret by the user.
             - Public key: Placed on the remote server, usually in the user's "~/.ssh/authorized_keys" file.
+# Important SSH security practices
+- Use strong, unique passwords when password authentication is enabled.
+- Prefer SSH public-key authentication where appropriate.
+- Protect private SSH keys and never share them.
+- Allow SSH access only to authorized users.
+- Keep the SSH server and operating system updated.
+- Disable root SSH login when it is not required and the system's administration policy permits it.
+- Use appropriate firewall rules to restrict network access to SSH.
 
   # Basic SSH Commands (Practiced)
   - Task1: Checked the SSH Client Version
@@ -74,6 +82,7 @@ It is commonly used by Linux administrators and cybersecurity professionals to:
         - sshd — the SSH server process.
         - 0.0.0.0:22 — listening on port 22 on all IPv4 interfaces.
         - [::]:22 — listening on port 22 on all IPv6 interfaces.
+        
 ## What I learned 
 - An SSH client can be installed without an SSH server.
 - Learned the basics of remote login.
