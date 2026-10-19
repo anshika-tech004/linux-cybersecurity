@@ -36,10 +36,18 @@ WEEK 2: Processes, Services and System Administration ✅
   - Linux logs
   - Linux System Administration & Process Monitoring lab folder
 
-WEEK 3: Users, Groups, Permissions & SSH
+WEEK 3: Users, Groups, Permissions & SSH ✅
   - Users & Groups
   - File Permissions
   - Ownership & sudo
   - Permission troubleshooting
   - SSH basics
   - Security & access control
+
+WEEK 4: Linux Networking + Cybersecurity Foundation
+  - Linux Networking Interfaces
+  - Connectivity & Routing
+  - DNS
+  - Linux N/w Troubleshooting
+  - Cybersecurity Foundation
+  - Linux Networking & Security Investigation Report
