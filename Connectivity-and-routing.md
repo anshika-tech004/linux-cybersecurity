@@ -1,3 +1,24 @@
+### Overview
+This practical applies the networking concepts studied in Month 1 through hands-on Linux exercises.
+
+### Objectives
+- Understand local network connectivity.
+- Test communication using the loopback address.
+- Identify and test the default gateway.
+- Investigate communication between devices within a local network.
+- Examine the Linux routing table.
+- Investigate network paths using traceroute.
+
+### Tools
+
+|Component| Details|
+|----|----|
+|Operating System| Ubuntu Linux|
+|Environment| Linux Terminal|
+|Connectivity Tool| ping|
+|Routing Tool| ip route|
+|Network Path Tool| traceroute|
+
 ## Local Connectivity Investigation
 - Objective: To test communication within the local Linux system using the loopback address.
 - Command: ping -c 4 127.0.0.1
@@ -123,6 +144,19 @@ The traceroute command was executed successfully in Ubuntu.
 
 This investigation demonstrated how data travels through multiple network devices before reaching an external destination. The traceroute command helped identify intermediate hops, observe response times, and understand how routers participate in forwarding packets across networks.
 
+
+### Key Findings
+
+Through this practical investigation, I learned:
+
+1. The loopback address is used to test communication within the local system.
+2. The default gateway forwards traffic towards other networks.
+3. Devices within a LAN can communicate through local network connectivity.
+4. The neighbour table provides information about nearby devices.
+5. The routing table determines how Linux forwards network traffic.
+6. The "ip route get" command helps examine route selection.
+7. Ping helps investigate connectivity at different network destinations.
+8. Traceroute helps examine intermediate network hops.
 
 
 
