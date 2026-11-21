@@ -28,7 +28,9 @@ The main objectives of this investigation are:
          - Identifying the MAC address.
  - Security Relevance: Network interface investigation helps identify active interfaces, understand the system's network configuration, and establish a foundation for further network security analysis.
  - Evidence:
-
+   ![ip-addr](ip-addr.png)
+   ![ip-link](ip-link.png)
+   
  # Routing Table Investigation
   - Objective: To examine how network traffic is directed toward local and external destinations.
   - Investigation: The Linux routing table was examined to understand how outgoing network traffic is forwarded.
@@ -43,6 +45,7 @@ The main objectives of this investigation are:
      - The investigation helped understand the relationship between the destination network, gateway, and outgoing network interface.
  - Security Relevance: Routing table investigation helps identify incorrect routes, unexpected gateways, and potential network configuration problems.
  - Evidence:
+   ![ip-route](ip-route.png)
    ![routing-table-investigation](routing-table-investigation.png)
 
 # Network Connectivity Testing
@@ -56,6 +59,7 @@ The main objectives of this investigation are:
        - Observing packet loss.
 - Security Relevance: Connectivity testing helps identify basic network communication problems and provides an initial step in troubleshooting network-related issues.
 - Evidence:
+  ![network-connectivity-testing](network-connectivity-testing.png)
 
  # DNS Resolution Investigation
   - Objective: To understand how domain names are translated into IP addresses using the Domain Name System (DNS).
