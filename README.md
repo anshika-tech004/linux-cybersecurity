@@ -44,10 +44,14 @@ WEEK 3: Users, Groups, Permissions & SSH ✅
   - SSH basics
   - Security & access control
 
-WEEK 4: Linux Networking + Cybersecurity Foundation
-  - Linux Networking Interfaces
-  - Connectivity & Routing
-  - DNS
-  - Linux N/w Troubleshooting
-  - Cybersecurity Foundation
-  - Linux Networking & Security Investigation Report
+WEEK 4: Linux Networking + Cybersecurity Foundation ✅
+  - Linux Networking & Security Investigation Report:
+     - Network Interface
+     - IP Configuration
+     - Routing table
+     - Connectivity tests
+     - DNS resolution
+     - Traceroute
+     - Listening ports
+     - Active connection
+     - Security observation
